@@ -293,6 +293,7 @@ $extra-large-screen: 1200px;
                         
 
                        }
+                       
                         
                     }
                 }
@@ -397,6 +398,7 @@ $extra-large-screen: 1200px;
                     display: block;
                     cursor: pointer;
                     display: flex;
+                    margin-bottom: 50px;
                     @media screen and (max-width : $medium-screen) {
                         flex-direction: column;
                         align-items: center;
@@ -406,7 +408,8 @@ $extra-large-screen: 1200px;
                     // border-bottom: 1px solid rgb(228, 227, 227);
                     border-radius: 40px;
                     padding: 15px;
-                    margin: auto;
+                    margin-left: auto;
+                    margin-right: auto;
                     justify-content: space-between;
                     box-shadow: 1px 1px rgb(221, 220, 220);
                     img{

@@ -8,14 +8,15 @@ import js from "../images/js.jpg"
 import react from "../images/reactjs.png"
 import node from "../images/node-js.png"
 import express from "../images/express.png"
+import sales from "../images/sales.png"
 function AboutMe() {
   return (
     <div className="aboutMe">
           <div className="presentationWithImage">
             <div className='textPresentation'>
-              <h1>Front-End React Developer</h1>
+              <h1>Software engineering Student at <span>ISITCOM Sousse</span></h1>
               
-              <p>Hi i'm Ahmed Abbassi. A passionate Front-end React Developer based in Monastir Tunisia</p>
+              <p>I am a Software Engineering student with experience in full-stack development and Salesforce development and administration. I enjoy building clean, scalable applications and have worked on AI integrations, user management systems, and dynamic dashboards. I am curious, motivated, and always improving my skills</p>
             </div>
             <img src={image1} alt='my'/>
 
@@ -33,6 +34,7 @@ function AboutMe() {
               <img alt='react' src={react} />
               <img alt='node' src={node} />
               <img alt='express' src={express} />
+              <img alt='salesforce' id='sales' src={sales}/>
             </div>
           </div>
 

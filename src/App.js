@@ -7,6 +7,10 @@ import AboutMe from './components/AboutMe'
 import About from './components/About'
 import Project from './components/Project'
 import Modal from './components/Modal'
+import erp from './images/erp.png'
+import onrtech from './images/lwc.gif'
+import teachlead from './images/teachlead.webp'
+import proxym from './images/proxym.png'
 
 import {faCircleUp} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -98,8 +102,64 @@ function App() {
         <h4 id='portfolio'>Portfolio</h4>
         <h4 id='afterPortfolio'>Each Project is a piece of developement</h4>
         <div id='projectsList'>
-          <Project image={chat} technologies={['React js', "Css"]}  />
+          {/* ERP MERN PROJECT */}
+      <Project
+        image={erp}
+        name= "ERP Management System"
+        description={
+          "ERP Management System built with the MERN stack. Includes authentication, user roles, product management, sales operations, and dynamic dashboards. Backend built with Express and MongoDB, frontend with React and Context API. Deployed using Netlify + Render."
+        }
+        technologies={["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "CSS"]}
+      />
+
+      {/* CHAT APP EXAMPLE */}
+      <Project
+        image={chat}
+        name= "Real-time Chat Application"
+        description={
+          "Real-time chat application using React and Express.js with responsive UI components. Features include live messaging, clean UX, and optimized code structure."
+        }
+        technologies={["React.js", "CSS", "Express.js"]}
+      />
+
+      {/* ONRTECH INTERNSHIP PROJECT */}
+      <Project
+        image={onrtech}
+        name= "Salesforce AI Virtual Assistant Integration"
+        description={
+          "Integration of the EchoParrot AI Virtual Assistant with Salesforce. Developed LWCs, integrated REST APIs, built UI for AI calls, script selection, and results visualization. Participated in functional testing."
+        }
+        technologies={["Salesforce", "LWC", "Apex", "SOQL", "REST API", "OAuth 2.0"]}
+      />
+
+      {/* TEACHLEAD INTERNSHIP PROJECT */}
+      <Project
+        image={teachlead}
+        name= "Salesforce  Application for Community User Management"
+        description={
+          "Developed a Salesforce Aura application for community user management. Added filters, pagination, dashboards, and implemented Web-to-Case with attachment integration."
+        }
+        technologies={["Apex", "SOQL", "Aura", "LWC", "JavaScript"]}
+      />
+
+      {/* PROXYM FINAL YEAR PROJECT */}
+      <Project
+        image={proxym}
+        name= "Design System and No-Code Page Builder"
+        description={
+          "Developed an internal Design System with reusable components and documentation. Built a no-code Page Builder generating dynamic pages and automated code generation for UI components."
+        }
+        technologies={[
+          "React.js",
+          "TypeScript",
+          "Chakra UI",
+          "Storybook",
+          "Node.js",
+          "MySQL",
+        ]}
+      />
         </div>
+        
 
         {/*contact form starts here*/}
         
