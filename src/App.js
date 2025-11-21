@@ -48,7 +48,7 @@ function App() {
     data.append('message', formData.message)
     if (formData.attachment) data.append('attachment', formData.attachment)
 
-    fetch("http://localhost:3001/contact", {
+    fetch("https://portfolio-back-production-26e7.up.railway.app//contact", {
       method: "POST",
       body: data // Content-Type automatically set by browser for FormData
     })
