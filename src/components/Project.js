@@ -1,9 +1,10 @@
 import React from 'react'
-
-function Project({ image, technologies, description, name }) {
+import { useNavigate } from 'react-router-dom'
+function Project({ image, technologies, description, name , projectPath, demoId , showCode=true, showDemo=false}) {
+    const navigate = useNavigate();
   return (
     <a
-      href="https://mellifluous-caramel-db6396.netlify.app/"
+      href={projectPath}
       className="project"
     >
       <img alt="" src={image} />
@@ -22,19 +23,21 @@ function Project({ image, technologies, description, name }) {
         </div>
 
         <div className="consult">
-          <span
+          {showDemo && <span
             className="toConsult"
             onClick={(e) => {
               e.stopPropagation();
               e.preventDefault(); // <-- THIS FIXES IT
               // your custom action here:
               console.log("Live demo clicked");
+              navigate(`/video/${demoId}`);
+              
             }}
           >
             Live Demo
-          </span>
+          </span>}
 
-          <span
+          {showCode && <span
             className="toConsult"
             onClick={(e) => {
               e.stopPropagation();
@@ -43,7 +46,7 @@ function Project({ image, technologies, description, name }) {
             }}
           >
             Code
-          </span>
+          </span>}
         </div>
       </div>
     </a>

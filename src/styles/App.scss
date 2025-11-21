@@ -837,3 +837,26 @@ $extra-large-screen: 1200px;
     }
     
 }
+#fileContainer {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 50px;
+
+  .customFileButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; // green button
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    
+  }
+
+  .customFileButton:hover {
+    background-color: #45a049;
+    
+  }
+}
